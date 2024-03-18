@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înregistrare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url("upb.jpg");
+            max-width: 100%;
+            height: auto;
+            background-size: 100%;
+            opacity: 0.80;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            opacity: 0.99;
+        }
+
+        form {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 50px;
+            width: 300px;
+            margin: 0 auto;
+            border-radius: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Înregistrare</h1>
+
+    <form action="procesare_inregistrare.php" method="post">
+        <label for="newUsername">Nume de utilizator:</label>
+        <input type="text" name="newUsername" id="newUsername" required><br>
+
+        <label for="newPassword">Parolă:</label>
+        <input type="password" name="newPassword" id="newPassword" required><br>
+
+        <button type="submit">Înregistrare</button>
+    </form>
+
+    <br>
+    <button onclick="goToLoginPage()">Înapoi la Autentificare</button>
+
+    <script>
+        function goToLoginPage() {
+            window.location.href = 'Login.html';
+        }
+    </script>
+</body>
+</html>

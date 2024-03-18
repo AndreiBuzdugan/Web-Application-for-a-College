@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adăugare Student/Profesor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #ebf1f7;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input, select {
+            
+            padding: 12px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input{
+            width: 94.5%;
+        }
+        select{
+            width: 100%;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            padding: 11px 21px;
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adăugare Student/Profesor</h1>
+    <form id="personForm" method="post" action="adauga_person.php">
+        <label for="firstName">Prenume:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Nume:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="role">Functie:</label>
+        <select id="role" name="role" required>
+            <option value="student">Student</option>
+            <option value="profesor">Profesor</option>
+        </select>
+
+        <button type="submit">Adăugare persoană</button>
+    </form>
+</body>
+</html>
