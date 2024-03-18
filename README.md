@@ -1,0 +1,1 @@
+We developed a web application for tracking professors, students, and study halls for a college, using technologies such as HTML, CSS, PHP, and JavaScript. We created a webpage for registering and viewing information, with data stored in a local database. Our team, consisting of three colleagues, collaborated closely to achieve the project's objectives.
